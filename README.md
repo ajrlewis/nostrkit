@@ -9,7 +9,7 @@ A collection of Nostr utility methods.
 Install via pip:
 
 ```bash
-pip install git+https://github.com/ajrlewis/nostr.git
+pip install git+https://github.com/ajrlewis/nostrkit.git
 ```
 
 ## License
