@@ -1,0 +1,26 @@
+[build-system]
+requires = [
+    "setuptools>=60",
+    "setuptools-scm>=8.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nostrkit"
+version = "0.1.0"
+description = "A collection of Nostr utility methods."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "ajrlewis", email = "hello@ajrlewis.com" }
+]
+dependencies = [
+    "loguru==0.7.2",
+    "git+https://github.com/callebtc/python-nostr@8086e4d8ba1b6a0a9b4dffdf828aeaba97fc94e2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
